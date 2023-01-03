@@ -1,0 +1,6 @@
+@media print {
+    .defaultBar {
+      margin: 0px!important;
+      width: 50vw!important;
+    }
+  }

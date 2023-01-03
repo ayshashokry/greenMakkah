@@ -1,0 +1,179 @@
+.plantsCarouselItem {
+  height: 500px;
+  text-align: center;
+}
+.plantsCarouselItem img {
+  height: 100%;
+  width: 80vw;
+}
+.plantsPage {
+  margin-top: 105px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.plantsPage::after {
+  background-image: url("../../assets/images/patternGreen.svg");
+  background-position: center;
+  content: "";
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -3;
+}
+
+.enviroConditions {
+  background-image: url("../../assets/images/plantsImages/enviroCond.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.growthNature {
+  background-image: url("../../assets/images/plantsImages/growthNature.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.flowerProp {
+  background-image: url("../../assets/images/plantsImages/flowersProp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.fruitProp {
+  background-image: url("../../assets/images/plantsImages/fruitsProp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.plantsFilters .ant-col {
+  padding: 15px !important;
+}
+.plantCardDetails h5 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  color: #2e735f;
+}
+.plantEnglishName {
+  text-align: left !important;
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #707070;
+  text-align: left;
+}
+.plantsCards .ant-card {
+  background-color: #f9f9f9 !important;
+  margin: 10px 6px;
+}
+.plantsCards .ant-card-body {
+  height: 220px;
+}
+.plantsCards a {
+  text-decoration: none !important;
+  font-family: "dinNext";
+}
+.plantCardDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.plantCardDetails p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: right;
+  color: #707070;
+  white-space: break-spaces;
+}
+
+.plantDetailsContainer .ant-col {
+  padding: 15px;
+}
+
+.detailCardData h5 {
+  text-align: center;
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2e735f;
+}
+
+.detailCardData h6 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  color: #2e735f;
+}
+.detailCardData p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: right;
+  color: #707070;
+  /* margin-bottom: 40px; */
+  margin-right: 15px;
+}
+.detailCardData {
+  padding: 15px;
+  width: 255px;
+  height: 300px;
+}
+
+.growthNature p,
+.fruitProp p {
+  color: #daf4e8 !important;
+}
+
+.growthNature h5,
+.fruitProp h5,
+.growthNature h6,
+.fruitProp h6 {
+  color: #fff !important;
+}
+.plantsPage .ant-card-cover {
+  height: 270px;
+}
+.plantsPage .newCard-img,
+.plantsPage .newCard-img img {
+  height: 100%;
+}
+.plantCardDetails img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 992px) {
+ 
+  .detailCardData {
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .plantsPage {
+    margin-top: 80px;
+  }
+}

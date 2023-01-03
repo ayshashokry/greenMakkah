@@ -1,0 +1,638 @@
+/*Header Styles*/
+.Header {
+  background: #fff !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  height: 65px;
+}
+.NavBar {
+  background: #fff !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  height: 105px;
+  z-index: 2;
+}
+.close-navbar-toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+  z-index: -1;
+}
+.drasat p {
+  cursor: pointer;
+  font-family: "dinNext" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  color: #707070 !important;
+}
+
+.navBarDrops .ant-dropdown {
+  width: 100vw !important;
+  top: 35px !important;
+  box-shadow: none !important;
+}
+
+.navLink {
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 23px !important;
+  line-height: 23px;
+  padding: 10px;
+  text-decoration: none !important;
+  color: #707070;
+  font-family: "geMedium" !important;
+  margin: 2px 0px 2px 20px;
+  letter-spacing: normal;
+  text-align: center;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+.Header .navLink {
+  width: 200px;
+}
+.NavBar .ant-menu h4,
+.landingNav .ant-menu h4 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: right;
+  color: #707070;
+  white-space: break-spaces;
+}
+.NavBar .ant-menu p,
+.landingNav .ant-menu p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: right;
+  color: #bebdbd;
+  white-space: break-spaces !important;
+  word-spacing: 2px;
+  line-height: 2;
+}
+.navBarDrops .ant-dropdown-menu-item {
+  height: auto !important;
+  border-radius: 10px;
+  /* padding: 15px !important; */
+  background-color: transparent !important;
+}
+.NavBar .navitem,
+.landingNav .navitem {
+  text-decoration: none !important;
+}
+.NavBar .navRight,
+.landingNav .navRight {
+  padding-right: 20px !important;
+  margin-left: auto !important;
+}
+.navRight a {
+  font-family: "dinNext" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 20px !important;
+  color: #707070 !important;
+}
+
+@media (min-width: 992px) {
+  .aboutMakkahCol {
+    text-align: center !important;
+  }
+  .landingNav .navRight a {
+    color: #fff !important;
+  }
+  .landingNav .navRight .ant-dropdown-trigger {
+    color: #fff;
+  }
+  .landingNav {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    height: 105px;
+  }
+  .landingNav .leftUl li,
+  .landingNav .leftUl a {
+    color: #fff !important;
+  }
+  .landingNav .userDropDown button {
+    color: #fff !important;
+  }
+  .logo1Nav {
+    margin-right: 0 !important;
+  }
+}
+.navRight .ant-dropdown-arrow {
+  display: none !important;
+}
+.navRight .nav-item .active {
+  color: #2e735f !important;
+  font-weight: bold !important;
+  border-bottom: 3px solid #2e735f !important;
+}
+.navUser {
+  top: 15px;
+  position: absolute;
+  left: 5px;
+}
+.navDropDesigns .ant-col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.NavBar .miniNavPlantes,
+.landingNav .miniNavPlantes {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.miniNavPlantes img {
+  height: 50px !important;
+  width: 50px !important;
+}
+.moreFamousH5 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: right;
+  color: #707070;
+}
+.navRight .ant-dropdown-trigger {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #707070;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.navRight .ant-dropdown-trigger:hover {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  /* font-size: 16px; */
+  color: #2e735f !important;
+  border: none !important;
+  /* background-color: rgba(46, 115, 95, 0.6) !important; */
+}
+.navHover {
+  padding: 6px 5px;
+}
+.navHover:hover {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  /* font-size: 16px; */
+  color: #2e735f !important;
+  border: none !important;
+  border-radius: 3px !important;
+  /* background-color: rgba(46, 115, 95, 0.6) !important; */
+}
+.navRight .ant-dropdown-open,
+.navRight .ant-dropdown-trigger:focus {
+  color: #2e735f !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-weight: bold;
+}
+.ant-dropdown-menu-item {
+  cursor: pointer;
+}
+
+.navRight .ant-col .active h4,
+.navRight .ant-col .active p {
+  color: #2e735f;
+  font-weight: bold;
+}
+.navRight .ant-col .active h4 {
+  text-decoration: underline !important;
+}
+
+.navRight .ant-menu .ant-col {
+  padding: 10px;
+}
+/*Footer*/
+.footer {
+  background-image: url("../assets/images/footerBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  /* margin-top: 50px !important;
+  padding-top: 10px; */
+  padding-bottom: 10px;
+}
+.footer ul {
+  list-style: none;
+  text-align: right;
+  padding-right: 0 !important;
+}
+.footerYear {
+  text-align: center;
+  margin-top: 10px;
+}
+.footerYear h6,
+.footCondition p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footCondition {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
+  padding: 10px;
+}
+.footerGrid h5 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+}
+.footerGrid li,
+.footerGrid li a {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #ffffff;
+  width: fit-content;
+  text-decoration: none !important;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.footer a {
+  text-decoration: none !important;
+}
+.footer svg {
+  color: #fff;
+}
+.footerGrid {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footerGrid li:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0 20px;
+  text-shadow: none;
+  transition: 1s;
+}
+.twitterIcon:hover {
+  color: #1da1f2 !important;
+}
+
+.youtubeIcon:hover {
+  color: #ff0000 !important;
+}
+
+.footCondition svg {
+  margin: 5px;
+}
+.logo1NavMobile {
+  display: none !important;
+}
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.navdesignGuide .ant-dropdown-menu-title-content {
+  margin-bottom: auto;
+}
+.navdesignGuide p,
+.navplantGuide p,
+.navDropMedia p,
+.aboutMakkah p {
+  white-space: break-spaces !important;
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  text-align: right;
+  color: #bebdbd;
+  font-size: 14px;
+}
+.navdesignGuide h4,
+.navplantGuide h4,
+.navDropMedia h4,
+.aboutMakkah h4 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px !important;
+  text-align: right;
+  color: #707070;
+}
+
+.navBarDrops .ant-dropdown-menu {
+  box-shadow: none !important;
+}
+
+.Header .nav-link.active {
+  color: #2e735f !important;
+  font-weight: bold !important;
+  border-bottom: 1px solid #2e735f !important;
+}
+.nav-link:hover {
+  color: #707070 !important;
+  font-weight: bold !important;
+}
+.navBarDrops .ant-dropdown-menu-item:hover {
+  background-color: rgba(46, 115, 95, 0.8) !important;
+}
+.ant-dropdown-menu-item:hover p,
+.ant-dropdown-menu-item:hover h4,
+.ant-dropdown-menu-item:hover .moreFamousH5 {
+  color: #fff !important;
+}
+.NavBar .ant-dropdown-menu-item,
+.landingNav .ant-dropdown-menu-item {
+  cursor: pointer;
+}
+
+.userDropDown .ant-dropdown-menu {
+  padding: 20px 0 !important;
+  width: 260px !important;
+}
+/* .userDropDown .userBreak {
+  white-space: break-spaces !important;
+} */
+
+.navSliderDiv {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr;
+  direction: rtl !important;
+}
+/* .navSliderDiv .ant-dropdown-menu-item {
+  margin: 10px;
+} */
+.navSliderDiv a {
+  text-decoration: none !important;
+}
+.NavBar .slick-prev,
+.landingNav .slick-prev {
+  left: 5px !important;
+  color: #2e735f !important;
+  cursor: pointer;
+  z-index: 99;
+}
+.NavBar .slick-next,
+.landingNav .slick-next {
+  color: #2e735f !important;
+  right: 5px;
+  left: unset;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.NavBar .slick-list,
+.landingNav .slick-list {
+  margin: 0 30px;
+}
+.NavBar .slick-next,
+.NavBar .slick-prev,
+.landingNav .slick-next,
+.landingNav .slick-prev {
+  position: absolute !important;
+  top: 50% !important;
+  cursor: pointer;
+}
+
+.navBarDrops {
+  transition: none !important;
+}
+
+.navDropActive .navitem {
+  border-bottom: 3px solid #2e735f !important;
+  color: #2e735f !important;
+  padding-bottom: 7px !important;
+}
+.navRight .ant-dropdown-menu {
+  padding-top: 55px !important;
+}
+@media (max-width: 992px) {
+  .footerLogo2 {
+    padding-right: 0 !important;
+  }
+  .footer {
+    padding-bottom: 110px;
+  }
+  .aboutMakkahCol {
+    padding-bottom: 20px !important;
+  }
+  .aboutMakkah br {
+    display: none !important;
+  }
+  .navNewsdrop .ant-col {
+    text-align: right !important;
+  }
+  .landingNav,
+  .NavBar {
+    background: #fff !important;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%) !important;
+    height: 80px !important;
+  }
+  .navbar-toggler {
+    position: absolute !important;
+    right: 5px !important;
+    z-index: 999999 !important;
+    bottom: 25px !important;
+  }
+  .logo1NavMobile {
+    bottom: 25px !important;
+  }
+  .navbar-toggler {
+    box-shadow: none !important;
+  }
+
+  .navRight {
+    width: 85vw !important;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    min-height: 100vh !important;
+    z-index: 100;
+    text-align: right;
+    background: #fff !important;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+  .navRight .ant-dropdown-menu {
+    width: 82vw !important;
+    padding-top: 15px !important;
+    border: 1px solid #bebdbd;
+    margin-right: auto;
+    padding-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 100px !important;
+  }
+  .navRight::-webkit-scrollbar {
+    width: 3px;
+    height: 7px;
+  }
+
+  .navRight::-webkit-scrollbar-thumb {
+    background-color: #bebdbd !important;
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    border: 1px solid #bebdbd;
+    /* creates padding around scroll thumb */
+  }
+  .navRightFlex {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    justify-content: flex-end !important;
+  }
+  .aboutMakkah img {
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+  }
+  .logo1Nav {
+    display: none;
+  }
+  .logo1NavMobile {
+    display: block !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 60px !important;
+  }
+  .userDropDown {
+    margin-top: 20px !important;
+  }
+  .logo1NavMobile img {
+    padding-bottom: 0 !important;
+  }
+  .userDropDown button {
+    font-size: 20px !important;
+  }
+  .navRight .ant-dropdown-trigger,
+  .navRight .nav-item a {
+    color: #2e735f !important;
+    z-index: 10 !important;
+    margin-bottom: 24px !important;
+    text-align: right;
+  }
+  .navRight .nav-item {
+    margin-bottom: 30px;
+  }
+  /* .navRight .ant-dropdown-trigger,
+  .navRight .nav-item {
+    width: 100vw !important;
+    border-bottom: 1px solid #bebdbd !important;
+  } */
+}
+@media (max-width: 767px) {
+  .footerLogo2 {
+    padding-right: 0 !important;
+    padding-top: 25px !important;
+  }
+  .Navlogo2 {
+    display: none !important;
+  }
+  .logo1NavMobile,
+  .navbar-toggler {
+    bottom: 25px !important;
+  }
+  .logo1NavMobile {
+    left: 10px !important;
+    right: unset !important;
+  }
+  .userDropDown {
+    /* margin-top: 45px !important; */
+    display: none !important;
+  }
+}
+@media (max-width: 500px) {
+  .logo1NavMobile img {
+    width: 150px !important;
+  }
+}
+
+.navSliderDiv .ant-dropdown-menu-item:hover {
+  background-color: rgba(46, 115, 95, 0.8) !important;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+  border-radius: 0 !important;
+}
+
+.landingNav .navRight a:hover {
+  color: #2e735f !important;
+}
+@media (max-width: 1100px) {
+  .Navlogo2 {
+    display: none !important;
+  }
+}
+@media (max-width: 1300px) and (min-width: 992px) {
+  .navRight .ant-dropdown-trigger,
+  .drasatNavLink .navLink {
+    font-size: 16px !important;
+    padding: 4px;
+  }
+  .drasatNavLink {
+    padding-top: 0 !important;
+  }
+}
+@media (max-width: 1200px) {
+  .headerLogo2 {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .Header {
+    height: 100px !important;
+  }
+  .dashDetailsTitle {
+    padding-top: 100px !important;
+  }
+  .Header .userDropDown {
+    margin-bottom: 37px !important;
+  }
+  .Header .navbar-nav {
+    padding-top: 60px !important;
+  }
+  .Header .container-fluid {
+    padding: 0 !important;
+  }
+  .Header .navbar-brand {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+  .Header .navLink {
+    width: fit-content !important;
+  }
+  .Header .iconLink {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .Header {
+    height: 145px !important;
+  }
+ 
+  .Header .navbar-nav {
+    padding-top: 80px !important;
+  }
+  .Header .iconLink {
+    margin-bottom: 50px !important;
+  }
+}

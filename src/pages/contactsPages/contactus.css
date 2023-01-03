@@ -1,0 +1,112 @@
+.messageUsPage {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 115px;
+}
+.messageUsPage::after {
+  background-image: url("../../assets/images/patternGreen.svg");
+  background-position: center;
+  content: "";
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -3;
+}
+.messageUs {
+  text-align: right;
+}
+.messageUs h4 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: #2e735f;
+}
+.messageUs h6 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #707070;
+}
+.messageUs label {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #707070 !important;
+}
+
+.contactUsMsg textarea,
+.contactUsMsg textarea:focus-visible {
+  overflow-y: auto;
+  height: 250px !important;
+  outline: none !important;
+  border-radius: 10px;
+  width: 100% !important;
+  border: 1px solid #ccc !important;
+}
+
+.contactInfo .contactIcon {
+  font-size: 16px !important;
+  margin: 0 0 0 10px;
+  color: #707070;
+}
+
+.contactUcButton {
+  width: 100% !important;
+}
+
+.inquiryForm button,
+.inquiryForm button:active,
+.inquiryForm button:focus {
+  border-radius: 4px;
+  background-color: #2e735f;
+  width: 100%;
+  font-family: "dinNext";
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fffefb;
+  height: 40px;
+}
+
+.inquiryForm button:hover {
+  background-color: #fff;
+  font-family: "dinNext";
+  color: #2e735f;
+  border: 1px solid #2e735f;
+}
+
+.contactInfo a {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #707070 !important;
+  text-decoration: none !important;
+}
+.contactInfo .ContactsData {
+  font-size: 18px;
+  color: #2e735f !important;
+}
+.contactInfo ul {
+  list-style-type: none !important;
+  display: inline-flex;
+}
+
+.instaIcon:hover {
+  color: #517fa4;
+}
+
+@media (max-width: 992px) {
+  .messageUsPage {
+    margin-top: 80px;
+  }
+}

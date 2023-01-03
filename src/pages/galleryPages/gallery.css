@@ -1,0 +1,222 @@
+.galleryPage {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 105px;
+  padding-bottom: 30px;
+}
+.galleryPage::after {
+  background-image: url("../../assets/images/patternGreen.svg");
+  background-position: center;
+  content: "";
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -3;
+}
+.albumDiv img {
+  width: 100% !important;
+  height: 100%;
+}
+.albumDiv h4 {
+  font-family: "dinNext";
+  font-style: normal;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background: linear-gradient(0deg, #2e735f91, #2e735fb3);
+  border-radius: 0px 0px 0px 40px;
+  color: #fff;
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  width: fit-content;
+  padding: 20px 40px 20px 20px;
+}
+
+.albumDivLeftImg {
+  position: relative;
+}
+.showAlbum {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  z-index: 999999 !important;
+  color: #ffffff;
+}
+.showAlbum a {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.showAlbum a:hover {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: bold;
+}
+.albumDivLeftImg {
+  height: 50%;
+}
+.thumbnail-slider {
+  margin-top: 5px;
+}
+.thumbnail-slider .slick-track {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.thumbnail-slider .slick-track::before {
+  display: none !important;
+}
+.thumbnail-slider .slick-slide div {
+  height: 350px !important;
+}
+.thumbnail-slider .slick-slide,
+.thumbnail-slider img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.videoSliderImg {
+  width: 100%;
+  height: 80vh !important;
+}
+.galleryMainSlider .slick-prev {
+  left: 20px !important;
+  color: #fff !important;
+  z-index: 99;
+}
+.galleryMainSlider .slick-next {
+  color: #fff !important;
+  right: 20px;
+  z-index: 99;
+}
+.galleryMainSlider .slick-next,
+.galleryMainSlider .slick-prev {
+  position: absolute !important;
+  top: 50% !important;
+  cursor: pointer;
+}
+.albumDiv .videoIcon {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  height: 50px !important;
+  width: 50px !important;
+}
+.videoGalleryRow {
+  margin-top: 20px;
+}
+.videoGalleryRow .ant-col {
+  padding: 15px;
+}
+
+.albumDivImg,
+.albumDivLeftImg {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+.albumDivImg img,
+.albumDivLeftImg img {
+  transition: all 0.3s;
+}
+.albumDivLeftImg:hover img,
+.albumDivImg:hover img {
+  transform: scale(1.2);
+}
+
+.albumDivLeftImg3 {
+  position: relative;
+}
+.albumDivLeftImg3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.albumDivLeftImgOverlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  opacity: 1 !important;
+  font-size: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.albumDiv .ant-col {
+  height: 500px !important;
+}
+.albumDivImg,
+.albumDiv img {
+  height: 100%;
+}
+.albumDivLeftImg {
+  height: 50%;
+}
+.albumDivLeftImg:hover .albumDivLeftImgOverlay {
+  opacity: 1 !important;
+}
+@media (max-width: 992px) {
+  .albumDiv .ant-col {
+    height: 320px !important;
+  }
+}
+@media (max-width: 767px) {
+  .showAlbum {
+    top: 43%;
+    right: 50%;
+    font-size: 25px;
+  }
+  .videoGalleryRow .ant-col {
+    width: 100% !important;
+  }
+  .videoGalleryRow {
+    justify-content: center;
+  }
+  .showAlbum a {
+    font-size: 17px !important;
+  }
+  .thumbnail-slider .slick-slide div {
+    height: 150px !important;
+  }
+  .albumDiv .ant-col {
+    height: 300px !important;
+  }
+  .videoSliderImg {
+    height: 40vh !important;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .galleryPage {
+    margin-top: 80px;
+  }
+}

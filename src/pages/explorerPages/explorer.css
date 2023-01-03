@@ -1,0 +1,1139 @@
+.explorerPage {
+  overflow: hidden !important;
+  height: 100vh !important;
+  position: relative;
+}
+
+.fullscreen {
+  height: 100%;
+}
+
+.explorerPage .css-k008qs {
+  direction: rtl !important;
+  height: 100%;
+}
+
+.explorerPage .css-1191obr-MuiPaper-root-MuiAppBar-root {
+  margin-left: unset !important;
+  margin-right: 240px !important;
+}
+
+.expMap {
+  background-image: url("../../assets/images/mapImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mapTools {
+  position: absolute;
+  top: 2% !important;
+  left: 10px;
+  z-index: 1;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.mapToolsLogin {
+  position: absolute;
+  bottom: 2%;
+  left: 10px;
+  z-index: 1;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.mapTools ul {
+  direction: ltr;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.mapTools ul,
+.painting ul,
+.explorerPage ul {
+  list-style-type: none !important;
+}
+
+.mapToolsUL li {
+  background-color: #2e735f;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  color: #fff !important;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border-radius: 50px;
+}
+
+.mapToolIcon {
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  color: #2e735f;
+  /* margin-left: 15px; */
+}
+
+.mapToolsUL li:hover {
+  background-color: #fff !important;
+  color: #2e735f !important;
+}
+/* 
+.merge {
+  background-image: url("../../assets/images/mergeBG.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(500px);
+    overflow: hidden !important;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    overflow: hidden !important;
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden !important;
+  }
+
+  100% {
+    transform: translateY(2000px);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden !important;
+  }
+}
+
+.mapToolsDisplay {
+  animation: fadeInTop 0.7s ease-in alternate;
+}
+
+.mapToolsHide {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeInBottom 0.7s ease-in alternate;
+}
+
+/*breadcrumbs*/
+.searchStepsWizard {
+  text-align: right !important;
+}
+
+.breadcrumbs {
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 0.3rem;
+  display: inline-flex;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.breadcrumbs li {
+  list-style-type: none;
+}
+
+.breadcrumbs__item {
+  background: #fff;
+  color: #333;
+  outline: none;
+  padding: 10px 35px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  clip-path: polygon(100% 0%, 79% 50%, 100% 100%, 25% 100%, 7% 51%, 25% 0%);
+  background-color: #edf1f5;
+}
+
+.breadcrumbs .first {
+  clip-path: polygon(
+    100% 0%,
+    100% 53%,
+    100% 100%,
+    25% 100%,
+    7% 51%,
+    25% 0%
+  ) !important;
+}
+
+.breadcrumbs .second,
+.breadcrumbs .third {
+  margin-right: -15px !important;
+}
+
+.breadcrumbs__item:hover {
+  background: #2e735f;
+  color: #fff;
+}
+
+.breadcrumbs__itemActive {
+  background: #2e735f;
+  color: #fff;
+}
+
+/*SideMenu Styles*/
+.SideMenu {
+  overflow-y: hidden !important;
+  /* top: 65px !important; */
+  position: absolute;
+  bottom: 0 !important;
+}
+
+.SideMenu .MuiPaper-root {
+  position: absolute;
+}
+
+.SideMenu .MuiList-root {
+  overflow: hidden !important;
+}
+
+.sideMenuFooter {
+  text-align: right;
+  white-space: break-spaces;
+  font-family: "geMedium";
+  font-size: 13px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.sideMenuTitle {
+  text-align: right;
+  position: absolute;
+  right: 25px !important;
+  white-space: break-spaces;
+  font-family: "geMedium";
+  font-size: 18px;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+
+.SideMenu .css-9mgopn-MuiDivider-root {
+  border-color: #2e735f;
+}
+
+.css-11o2879-MuiDrawer-docked .MuiDrawer-paper,
+.css-uqx0qm-MuiDrawer-docked .MuiDrawer-paper {
+  box-shadow: -6px 0px 4px 0 rgb(0 0 0 / 32%), -2px -2px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.generalOut {
+  min-height: 80px !important;
+}
+
+.generalIn {
+  min-height: 55px !important;
+}
+
+.SideMenu .MuiListItem-button {
+  text-align: right !important;
+}
+
+.SideMenu .MuiTypography-root {
+  text-decoration: none !important;
+  color: #33332e !important;
+  font-family: "geMedium" !important;
+  text-decoration-line: none !important;
+}
+
+.closeMenuIcon {
+  color: #2e735f !important;
+}
+
+.MuiListItem-root:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+.sideLinkDiv {
+  text-align: right;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.sideLinkDiv .nav-link {
+  color: #2e735f !important;
+}
+
+.sideLinkDiv img {
+  filter: invert(36%) sepia(66%) saturate(345%) hue-rotate(112deg)
+    brightness(90%) contrast(90%) !important;
+}
+
+.sideLinkDiv:hover {
+  background-color: #daf4e8 !important;
+}
+
+.sideLinkDiv:hover .MuiTypography-root {
+  color: #707070 !important;
+}
+
+.css-zxdg2z {
+  padding: unset !important;
+}
+
+/*SideMenu Sections*/
+
+/*Coordinate*/
+
+.coordinates h3,
+.SideMenu h3 {
+  font-family: "geMedium";
+  font-size: 18px;
+  line-height: 1.93;
+  text-align: center;
+  color: #2e735f;
+}
+
+/* .SideMenu h3 {
+  position: relative;
+  right: righ;
+  right: 50%;
+  top: 10px;
+} */
+
+.coordinates .nav-tabs .nav-link,
+.coordinates .nav-tabs .nav-link:focus {
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+}
+
+.coordinates .nav-link.hover {
+  color: #2e735f !important;
+  font-weight: bold;
+}
+
+.coordinates .nav-link {
+  font-family: "geMedium";
+  font-size: 15px;
+
+  letter-spacing: normal;
+  color: #687781;
+  margin-right: auto;
+}
+
+.coordinates .nav-tabs {
+  border: none !important;
+  background-color: rgba(231, 233, 241, 0.59);
+  direction: rtl;
+  padding-right: 0 !important;
+}
+
+.backBtn h3 {
+  margin: auto;
+}
+
+#SearchSidemenu .css-1u2mxbp {
+  display: -webkit-box !important;
+}
+
+#h3SideSearch {
+  margin: unset !important;
+  margin-left: auto !important;
+}
+
+.bookmarkDiv svg {
+  color: #2e735f !important;
+}
+
+.backBar {
+  margin-left: auto;
+}
+
+.backBar svg {
+  transform: rotate(90deg);
+  color: #2e735f !important;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.backBtn svg {
+  color: #2e735f !important;
+}
+
+.coordinateForm h5,
+.generalSearchCard h5 {
+  font-family: "geMedium";
+  font-size: 16px;
+  line-height: 1.94;
+  text-align: right;
+}
+
+.coordinateForm input {
+  height: 40px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+/*GeneralSearch*/
+.generalSearchResult {
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.generalSearchCard {
+  padding: 5px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.menuIcons {
+  list-style-type: none !important;
+  text-align: left;
+}
+
+.menuIcons li {
+  background: #fff !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  padding: 5px 10px 5px 10px;
+  color: #2e735f !important;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 50px;
+  display: inline;
+  margin: 5px;
+}
+
+.menuIcons li:hover {
+  background: #2e735f !important;
+  color: #fff !important;
+}
+
+.generalSearchCard p {
+  font-family: "geMedium";
+  font-size: 16px;
+  text-align: right;
+}
+
+.generalSearchCard .munSpan {
+  color: #117074;
+}
+
+.generalSearchCard .distSpan {
+  color: #2e735f;
+}
+
+.generalSearchCard .googleIcon,
+.generalSearchCard .zoomIcon {
+  font-size: 17px;
+  color: #2e735f;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.generalResultDetails table {
+  text-align: right;
+}
+
+.generalResultDetails th {
+  font-family: "geMedium";
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.generalResultDetails td {
+  font-family: "dinNext";
+  padding: 5px;
+}
+
+.generalResultDetails tr {
+  border-color: #edf1f5 !important;
+}
+
+.generalResultDetails .react-tabs__tab-list {
+  text-align: center;
+}
+
+.openedservicesMenu .react-tabs__tab-list {
+  text-align: center;
+  border-bottom: none !important;
+}
+
+.expMapTags .react-tabs__tab-list {
+  text-align: right !important;
+  border-bottom: none !important;
+}
+
+.openedservicesMenu .react-reveal {
+  z-index: 9999999 !important;
+}
+
+.expMapTags .react-tabs__tab {
+  color: #707070 !important;
+  background: #fff;
+  box-shadow: inset 0 0 #2e735f;
+  font-family: "dinNext";
+  border-radius: 16px;
+  margin: 10px;
+  font-size: 1.05em;
+  border: 1px solid #2e735f;
+}
+
+.expMapTags .react-tabs__tab img {
+  filter: invert(44%) sepia(3%) saturate(0%) hue-rotate(257deg) brightness(96%)
+    contrast(82%) !important;
+}
+
+.expMapTags .react-tabs__tab--selected {
+  background-color: #daf4e8 !important;
+  color: #2e735f !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  font-family: "dinNext";
+  border-radius: 16px;
+}
+
+.expMapTags .react-tabs__tab--selected img {
+  filter: invert(48%) sepia(77%) saturate(2067%) hue-rotate(119deg)
+    brightness(96%) contrast(94%) !important;
+}
+
+.expMapTags .react-tabs__tab:hover {
+  background: #2e735f !important;
+  color: #fff !important;
+}
+
+.expMapTags .react-tabs__tab:hover img {
+  filter: unset !important;
+}
+
+.generalResultDetails .react-tabs__tab {
+  padding: 6px !important;
+}
+
+.generalResultDetails .react-tabs__tab-list svg {
+  color: #2e735f !important;
+  font-size: 17px;
+}
+
+.generalResultDetails .react-tabs__tab-list li:hover {
+  border: 1px solid #2e735f;
+  border-radius: 5px;
+}
+
+.generalResultDetails .react-tabs__tab-list li {
+  margin: 0px 5px;
+}
+
+.generalResultDetails .react-tabs__tab--selected {
+  border: none !important;
+  background-color: #2e735f !important;
+}
+
+.generalResultDetails .react-tabs__tab--selected svg {
+  color: #fff !important;
+}
+
+.generalResultDetails .react-tabs__tab-list {
+  background: #f7f7f7 !important;
+  padding: 5px;
+}
+
+.generalSearchCard:hover svg,
+.generalSearchCard:hover p,
+.generalSearchCard:hover h5,
+.generalSearchCard:hover span {
+  color: #fff !important;
+}
+
+/*Animations*/
+
+.generalSearchCard:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 500%;
+  height: 1000%;
+  background-color: #2e735f !important;
+  z-index: -1;
+  transform-origin: 0% 0%;
+  transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
+  transform: translateY(10%) translateX(16%) rotate(-45deg);
+  transition: transform 0.3s;
+}
+
+.generalSearchCard:hover::after {
+  transform: translateY(10%) translateX(-200px) rotate(-45deg) !important;
+}
+
+/*End of Animation*/
+
+.tooltipButton,
+.tooltipButton:hover,
+.tooltipButton:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 5px !important;
+  background-color: transparent !important;
+}
+
+.roundedUL {
+  list-style-type: none;
+  /* background-color: #fff; */
+  /* box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%); */
+  border-radius: 5px;
+  bottom: 0 !important;
+  /* position: absolute; */
+  left: 0;
+}
+
+.openedservicesMenu {
+  /* top: 110px; */
+  left: 40px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.roundedUL svg {
+  cursor: pointer;
+  color: #fff !important;
+}
+
+.roundedUL li {
+  display: block !important;
+  cursor: pointer;
+  background-color: #2e735f;
+  width: 40px;
+  height: 40px;
+  margin-top: 12px;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  border-radius: 50px;
+}
+
+.roundedUL li:hover {
+  background-color: #fff;
+}
+
+.roundedUL li:hover svg {
+  color: #2e735f !important;
+}
+#basemapGallery ul {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#basemapGallery li {
+  padding: 5px !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%) !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  margin: 5px !important;
+  background-color: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  display: block !important
+  ;
+}
+
+.identifyTableStyle {
+  margin-top: 10px;
+}
+
+.ServiceMenu {
+  left: 110px;
+  text-align: right;
+  padding: 10px !important;
+  background: #fff !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  position: fixed;
+  /* width: fit-content; */
+  z-index: 999999999999999 !important;
+  max-height: 450px;
+  height: fit-content;
+  /* min-width: 300px; */
+  width: 315px;
+}
+
+.identifyScreen {
+  overflow-y: auto;
+  height: auto;
+  max-height: 400px;
+}
+
+.allServicesPage {
+  position: absolute;
+}
+
+.sideLinkDiv .navLink {
+  font-size: 17px !important;
+  text-align: right !important;
+}
+
+.mapOuterSearch {
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+}
+
+.outerSearchIcon {
+  color: #fff;
+  background-color: #2e735f;
+  padding: 8px;
+  border-radius: 50px;
+  width: 40px;
+  text-align: center;
+  top: 12px;
+}
+
+.outerSearchInput input {
+  height: 25px !important;
+}
+
+.outerSearchInput {
+  border-radius: 10px !important;
+  margin-bottom: 5px !important;
+}
+
+.outerSearchInput .ant-input-affix-wrapper-focused {
+  box-shadow: none !important;
+  border-color: #d4d6de !important;
+}
+
+.outerSearchForm button {
+  background-color: #2e735f !important;
+  border-radius: 10px !important;
+  color: #fff;
+  left: 0;
+  height: 40px;
+  font-family: "NeoSansArabic";
+  margin-bottom: 10px;
+}
+
+.outerSearchForm button:hover {
+  color: #2e735f;
+  background-color: transparent !important;
+  border: 1px solid #2e735f;
+}
+
+.outerSearchInput .ant-input-affix-wrapper {
+  border-radius: 10px !important;
+}
+
+.outerSearchForm {
+  /* position: absolute; */
+  padding: 10px 10px 2px 10px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  border-radius: 15px;
+  width: 300px;
+}
+
+.outerSearchForm
+  .ant-input-search-rtl
+  > .ant-input-group
+  > .ant-input-group-addon {
+  background-color: transparent !important;
+  padding-right: 10px !important;
+}
+
+.outerSearchForm .ant-input-group-addon button {
+  border-radius: 50px !important;
+  color: #fff !important;
+}
+
+.outerSearchForm .ant-input-group-addon button:hover {
+  color: #2e735f !important;
+  background-color: #fff !important;
+}
+
+.outerSearchAutoComplete {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+  height: 200px;
+  overflow: auto;
+  background-color: #fff !important;
+  font-family: "NeoSansArabic";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 300px;
+}
+
+.outerSearchAutoComplete p {
+  cursor: pointer;
+  font-family: "dinNext";
+}
+
+.outerSearchAutoComplete p:hover {
+  font-weight: bold;
+  color: #117074;
+}
+
+.closeServMenu {
+  color: #2e735f !important;
+  float: right;
+}
+
+.outerForm {
+  position: relative;
+}
+/* 
+.react-tabs__tab-panel--selected {
+  margin-left: 65px !important;
+} */
+
+.esri-basemap-gallery {
+  overflow-y: scroll !important;
+  width: 300px !important;
+  height: 345px !important;
+}
+
+.esri-basemap-gallery__item {
+  border-left: 5px solid transparent !important;
+}
+
+.esri-basemap-gallery__item--selected {
+  border-left-color: #0079c1 !important;
+}
+
+.toc {
+  overflow-y: scroll !important;
+  width: 266px !important;
+  height: 340px !important;
+}
+
+.toc li {
+  list-style: none;
+}
+
+.toc-map {
+  margin-top: 20px;
+  padding: 2%;
+  background: white;
+  overflow-x: hidden;
+  direction: rtl;
+  background: transparent;
+}
+
+.disableLabel {
+  color: #707070;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.enableLabel {
+  /* color: #fff; */
+  /* background: #00619b; */
+  color: black;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.toc-result {
+  padding: 2%;
+  display: grid;
+  grid-template-rows: 50px 65vh;
+  background: white;
+  /* overflow-x: hidden; */
+  direction: rtl;
+  overflow-x: hidden;
+  background: transparent;
+  overflow-y: scroll;
+}
+
+.MuiTypography-root {
+  font-family: "geMedium" !important;
+}
+
+.nearbyIcon {
+  cursor: pointer;
+}
+.nearbyIcon:hover {
+  filter: invert(35%) sepia(77%) saturate(269%) hue-rotate(112deg)
+    brightness(93%) contrast(98%) !important;
+}
+.expCheckboxGroup .MuiCheckbox-root {
+  display: none !important;
+}
+
+.expCheckboxGroup .MuiTypography-root {
+  color: #707070;
+  background: #fff;
+  font-family: "dinNext";
+  border-radius: 16px;
+  margin: 10px;
+  font-size: 1.05em;
+  border: 1px solid #2e735f;
+  margin: 5px !important;
+  padding: 10px;
+  cursor: pointer;
+}
+.galleryHead {
+  color: #2e735f;
+  text-align: center;
+  font-weight: bold;
+  font-family: "dinNext";
+}
+.expCheckboxGroup .MuiTypography-root img {
+  filter: invert(48%) sepia(0%) saturate(143%) hue-rotate(161deg)
+    brightness(91%) contrast(94%);
+}
+.expCheckboxGroup .MuiTypography-root:hover {
+  background: #c4edda !important;
+}
+
+.expParentCheck {
+  color: #707070 !important;
+  background: #fff;
+  font-family: "dinNext";
+  border-radius: 16px;
+  margin: 10px;
+  font-size: 1.05em;
+  border: 1px solid #2e735f;
+  margin: 10px !important;
+  padding: 2px 5px;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #2e735f !important;
+}
+
+.expMapTags {
+  display: flex;
+}
+
+.SideMenuOpenArrow {
+  position: absolute;
+  z-index: 99;
+}
+.SideMenuOpenArrow svg {
+  font-size: 25px !important;
+  color: #2e735f !important;
+}
+.SideMenuOpenArrow button {
+  padding: 8px !important;
+  background: #fff !important;
+  width: 40px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+
+.infoTableTd {
+  font-family: "geMedium";
+  font-weight: bold;
+}
+.infoTableData {
+  font-family: "dinNext";
+}
+.identifyTR {
+  border-bottom: 1px solid #80808057 !important;
+  border-top: none !important;
+  height: 35px;
+}
+input[type="checkbox"]:checked:before {
+  border: 1px solid #fff !important;
+  background-color: #2e735f !important;
+}
+.css-j204z7-MuiFormControlLabel-root {
+  margin-right: 0 !important;
+  margin-left: 2px !important;
+}
+
+.expServTabs .react-tabs__tab-panel--selected {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#activeTabss .react-tabs__tab--selected,
+.activeMapTool {
+  background-color: #fff !important;
+  color: #2e735f !important;
+}
+
+#activeTabss .react-tabs__tab--selected svg,
+.activeMapTool svg {
+  color: #2e735f !important;
+}
+
+.coordinates {
+  overflow-y: scroll !important;
+  min-height: 80%;
+}
+
+/* .landingExplorer .mapOuterSearch,
+.landingExplorer .mapTools {
+  top: 80px !important;
+}
+.landingExplorer .SideMenuOpenArrow {
+  top: 75px !important;
+}
+
+.landingExplorer .SideMenu {
+  top: 68px !important;
+} */
+
+.mapPlantsType {
+  position: absolute;
+  bottom: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  width: 328px;
+  height: 240px;
+  left: 20px;
+  z-index: 1;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.mapPlantsType ul {
+  list-style-type: none !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px !important;
+  margin: 0 !important;
+}
+.mapPlantsType li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: right;
+  margin: 0 0 0 25px;
+}
+.mapPlantsType img {
+  margin-left: 3px;
+}
+.mapPlantsType h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  font-family: "dinNext";
+  color: #009f57;
+  margin-bottom: 0 !important;
+}
+.mapPlantsType li p {
+  color: #707070;
+  font-family: "geLight";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+#mapRight450 {
+  right: 450px !important;
+}
+#mapRight340 {
+  right: 340px !important;
+}
+#mapRight50 {
+  right: 50px !important;
+}
+@media (max-width: 1200px) {
+  .expMapTags {
+    position: unset !important;
+  }
+  .mapOuterSearch {
+    display: block !important;
+  }
+  .mapTools {
+    left: 0 !important;
+  }
+
+  #mapRight340 {
+    right: 300px !important;
+  }
+}
+.expMobile {
+  display: none;
+}
+.expMobile .appTexts {
+  margin-top: 105px;
+}
+@media (max-width: 768px) {
+  .explorerPage {
+    display: none;
+  }
+  .expMobile .appTexts p {
+    color: #2e735f !important;
+  }
+  .expMobile h6 {
+    font-family: "dinNext";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #2e735f !important;
+  }
+
+  .expMobile {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 70px;
+  }
+  .expMobile::after {
+    background-image: url("../../assets/images/patternGold.svg");
+    background-position: center;
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -3;
+  }
+}
+
+.serviceMenuHome {
+  left: 65px;
+  text-align: right;
+  padding: 10px !important;
+  background: #fff !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  position: absolute !important;
+  /* width: fit-content; */
+  z-index: 999999999999999 !important;
+  max-height: 300px;
+  height: fit-content;
+  /* min-width: 300px; */
+  width: 315px;
+}.serviceMenuHome .esri-basemap-gallery{
+  height: 250px !important;
+}

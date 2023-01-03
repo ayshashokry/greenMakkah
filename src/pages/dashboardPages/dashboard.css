@@ -1,0 +1,604 @@
+.dashboardPage {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.dashPrint {
+  margin-top: 100px !important;
+  width: 90%;
+  margin: auto;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  position: relative;
+  display: block;
+}
+.dashboardPage::after,
+.dashPrint::after {
+  background-image: url("../../assets/images/patternGold.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -3;
+}
+
+.dashboardPage .printBtn {
+  border: 2px solid #2e735f !important;
+  color: #2e735f !important;
+  font-family: "geMedium";
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 7px;
+  height: 48px;
+}
+.dashboardPage .printBtn:hover {
+  box-shadow: inset 12em 0 #2e735f !important;
+  cursor: pointer;
+  color: #fff !important;
+}
+.Header .nav-link.active {
+  background-color: #daf4e8 !important;
+}
+.Header .nav-link {
+  font-size: 18px !important;
+  background-color: #f9f9f9 !important;
+  border-radius: 8px;
+}
+.Header .nav-link img {
+  filter: invert(44%) sepia(3%) saturate(0%) hue-rotate(257deg) brightness(96%)
+    contrast(82%) !important ;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.Header .nav-link.active img {
+  filter: invert(35%) sepia(77%) saturate(269%) hue-rotate(112deg)
+    brightness(93%) contrast(98%) !important ;
+}
+.ant-select-item-option-disabled.ant-select-item-option-selected {
+  background-color: #f5f5f5 !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+  cursor: none !important;
+}
+.dashSelectDropDown {
+  background-color: #fff !important;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.dashSelectDropDown .react-tabs__tab {
+  border: none;
+  margin: 5px;
+  background-color: #f9f9f9;
+  border-radius: 50px;
+  padding: 5px 10px !important;
+}
+.dashSelectDropDown img {
+  filter: invert(44%) sepia(3%) saturate(0%) hue-rotate(257deg) brightness(96%)
+    contrast(82%) !important ;
+}
+.dashSelectDropDown .react-tabs__tab--selected {
+  background-color: #daf4e8;
+}
+.dashSelectDropDown .react-tabs__tab--selected img {
+  filter: invert(48%) sepia(77%) saturate(2067%) hue-rotate(119deg)
+    brightness(96%) contrast(94%) !important;
+}
+
+.dashMapChecks .ant-select-selection-item img,
+.dashMapChecks .ant-select-item-option-selected img {
+  filter: invert(48%) sepia(77%) saturate(2067%) hue-rotate(119deg)
+    brightness(96%) contrast(94%) !important;
+}
+
+.dashMapChecks .ant-select-item-option-selected {
+  background: #daf4e8 !important;
+}
+.dashMapTools {
+  position: absolute;
+  top: 90px;
+  left: 5px;
+  direction: ltr;
+  padding-right: 15px !important;
+  list-style-type: none !important;
+}
+
+.dashMapTools li {
+  background: #2e735f !important;
+  display: inline;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 32%), 0 0 2px 0 rgb(0 0 0 / 20%);
+  padding: 5px 10px 5px 10px;
+  color: #fff !important;
+  cursor: pointer;
+  margin-right: 15px;
+  text-align: center;
+  border-radius: 50px;
+}
+.dashMapTools li:hover {
+  background: #fff !important;
+  color: #2e735f !important;
+}
+.dashMapStatistics {
+  top: 64px;
+  bottom: 0 !important;
+  left: 0;
+  position: absolute;
+  direction: ltr;
+  list-style-type: none !important;
+  height: 91vh;
+  overflow: auto;
+  padding-left: 0 !important;
+}
+.dashMapStatistics li {
+  padding: 0px 10px;
+  /* border-radius: 16px; */
+  /* margin: 10px 0 20px 0; */
+  border-bottom: 1px solid #fff;
+}
+.dashMapStatistics .ant-progress-circle .ant-progress-text {
+  color: #fff !important;
+}
+.dashSectors {
+  bottom: 0;
+  top: 170px;
+  bottom: 0 !important;
+  right: 5px;
+  position: absolute;
+  direction: ltr;
+  /* padding-right: 15px !important; */
+  list-style-type: none !important;
+  min-height: 80vh;
+  overflow: auto;
+  cursor: pointer;
+}
+.dashSectors li {
+  padding: 34px 10px;
+  border-radius: 16px;
+  margin: 10px 0 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 16px 2px rgba(190, 189, 189, 0.05);
+  font-family: "geMedium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.dashSectors li:hover,
+#activeSector {
+  background-color: rgba(46, 115, 95, 0.8);
+}
+.firstStat {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  height: 25%;
+}
+.secondStat {
+  background: rgba(50, 160, 113, 0.4);
+  backdrop-filter: blur(8px);
+  height: 25%;
+}
+.thirdStat {
+  background: rgba(48, 136, 200, 0.4);
+  backdrop-filter: blur(5px);
+  height: 10%;
+}
+.forthStat {
+  background: rgba(88, 183, 94, 0.4);
+  backdrop-filter: blur(5px);
+}
+.dashMapChecks {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  display: flex;
+}
+
+.dashMapChecks .ant-select {
+  width: 200px !important;
+  position: relative;
+  bottom: 6px;
+}
+
+.dashMapStatistics h3 {
+  font-family: "geMedium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  /* padding-top: 10px; */
+  color: #ffffff;
+}
+
+.dashMapStatistics p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: bold;
+  /* font-size: 14px; */
+  text-align: center;
+  margin-bottom: 0px !important;
+  color: #ffffff;
+  /* padding-top: 10px; */
+}
+.statProgP {
+  margin-bottom: 0 !important;
+}
+.dashGov {
+  background-color: transparent !important;
+  border: none !important;
+  top: 170px !important;
+  padding-left: 10px;
+  /* overflow: hidden !important; */
+}
+.dashGov .govImg {
+  filter: invert(44%) sepia(3%) saturate(0%) hue-rotate(257deg) brightness(96%)
+    contrast(82%) !important;
+}
+.ant-collapse-content-box::-webkit-scrollbar-thumb,
+.dashGov::-webkit-scrollbar-thumb {
+  background-color: #f9f9f959 !important;
+  /* color of the scroll thumb */
+  border-radius: 5px;
+  /* roundness of the scroll thumb */
+  border: 1px solid #f9f9f959 !important;
+  /* creates padding around scroll thumb */
+}
+.dashGov .ant-collapse {
+  padding-left: 10px;
+}
+.dashGov .ant-collapse-item {
+  /* padding: 25px 0px; */
+  border-radius: 16px !important;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+  font-family: "geMedium";
+  border: none !important;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 16px 2px rgba(190, 189, 189, 0.05);
+  cursor: pointer;
+}
+.dashGov .ant-collapse-header {
+  color: #fff !important;
+  border-radius: 16px !important;
+}
+.dashGov .ant-collapse-content {
+  background-color: transparent !important;
+  border-top: none !important;
+}
+.dashGov .ant-collapse-item-active {
+  background: transparent !important;
+}
+.dashGov .ant-collapse-content-box {
+  text-align: center !important;
+  /* max-height: 200px;
+  overflow: auto; */
+}
+.dashGov .ant-collapse-item-active .ant-collapse-header {
+  background: rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 2px 4px 16px 2px rgba(190, 189, 189, 0.05) !important;
+  margin-bottom: 10px;
+}
+.govDiv {
+  background: #daf4e8;
+  box-shadow: 2px 4px 16px 2px rgba(190, 189, 189, 0.05);
+  border-radius: 8px;
+  font-family: "geMedium";
+  color: #707070 !important;
+  font-size: 16px;
+  /* padding: 10px; */
+  margin: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer !important;
+}
+.govDiv:hover {
+  background: #2e735f;
+  color: #fff !important;
+}
+.govDivSelect {
+  background: #2e735f;
+  color: #fff !important;
+  box-shadow: 2px 4px 16px 2px rgba(190, 189, 189, 0.05);
+  border-radius: 8px;
+  font-family: "geMedium";
+  font-size: 16px;
+  /* padding: 10px; */
+  margin: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer !important;
+}
+.govDivSelect .govImg {
+  filter: unset !important;
+}
+.govDiv:hover .govImg {
+  filter: unset !important;
+}
+
+/*Charts*/
+.recharts-cartesian-axis-tick-line {
+  display: none !important;
+}
+.defaultBar {
+  height: 500px;
+  background-color: #f9f9f9 !important;
+  margin: auto;
+  padding-bottom: 50px;
+  font-family: "dinNext" !important;
+}
+.barText {
+  font-family: "dinNext" !important;
+  color: #fff !important;
+}
+.recharts-surface {
+  height: 550px !important;
+}
+
+.dashDetailsTitle {
+  font-family: "geMedium";
+  text-align: right;
+  padding-right: 70px;
+}
+
+.govH6 {
+  font-family: "geMedium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #707070;
+}
+.goveChartBar .ant-col {
+  padding: 10px;
+}
+.goverCharCol {
+  height: 500px;
+  background-color: #f9f9f9 !important;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 50px;
+  font-family: "dinNext" !important;
+}
+.dashDefaultTable {
+  width: 90vw !important;
+  margin: auto;
+  position: relative;
+}
+.dashDefaultTable thead {
+  background-color: #daf4e8 !important;
+  border: none !important;
+}
+.dashDefaultTable th {
+  font-family: "geMedium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2e735f;
+  padding: 15px !important;
+  text-align: center !important;
+  border: none !important;
+  width: 100px !important;
+}
+.dashDefaultTable td {
+  font-family: "geMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #707070;
+  padding: 15px !important;
+  text-align: center !important;
+  border: none !important;
+  direction: rtl;
+  width: 100px !important;
+  height: 130px;
+}
+.dashDefaultTable tbody {
+  border: none !important;
+  background: #f9f9f9 !important;
+  display: block;
+  min-width: 900px;
+  padding-bottom: 15px;
+  overflow: scroll;
+}
+.dashDefaultTable tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.dashDefaultTable thead th:last-child {
+  border-radius: 0px 16px 0px 0px !important;
+  border: 1px solid transparent !important;
+}
+
+.dashDefaultTable thead th:first-child {
+  border-radius: 16px 0px 0px 0px !important;
+  border: 1px solid transparent !important;
+}
+.dashDefaultTable span {
+  background: #daf4e8 !important;
+  color: #2e735f !important;
+}
+.dashDefaultTable thead {
+  display: table;
+  min-width: 100%;
+  table-layout: fixed;
+  border-radius: 10px;
+  border: none !important;
+}
+/* .table > :not(:first-child) {
+  border: none !important;
+} */
+
+.GovSectorTD {
+  vertical-align: middle !important;
+  background-color: #daf4e8 !important;
+  color: #2e735f !important;
+}
+
+.dashCheckboxGroup .MuiCheckbox-root {
+  display: none !important;
+}
+.dashCheckboxGroup .MuiTypography-root {
+  color: #707070;
+  cursor: pointer;
+  background: #fff;
+  font-family: "dinNext";
+  border-radius: 16px;
+  margin: 10px;
+  font-size: 1.05em;
+  border: 1px solid #2e735f;
+  margin: 10px !important;
+  padding: 10px;
+}
+.dashCheckboxGroup .MuiTypography-root img {
+  filter: invert(48%) sepia(0%) saturate(143%) hue-rotate(161deg)
+    brightness(91%) contrast(94%);
+}
+.dashCheckboxGroup .MuiTypography-root:hover {
+  background: #c4edda !important;
+}
+.dashParentCheck {
+  flex-direction: row-reverse !important;
+  color: #707070 !important ;
+  background: #fff;
+  font-family: "dinNext";
+  border-radius: 16px;
+  margin: 10px;
+  font-size: 1.05em;
+  border: 1px solid #2e735f;
+  margin: 10px !important;
+  padding: 2px 5px;
+  margin-right: 120px;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #2e735f !important;
+}
+
+.dashSelect {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 0;
+  height: 45px;
+  text-align: right;
+  cursor: pointer;
+}
+.selectDiv span {
+  color: #707070 !important;
+  font-family: "dinNext";
+  font-size: 13px;
+  margin-bottom: unset !important;
+  margin-top: 10px !important;
+}
+.selectDiv svg {
+  color: #707070 !important;
+  float: left !important;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.dashGov .sec1 {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-734276680538616-1;
+}
+
+.dashGov .sec2 {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-734276680538616-1;
+}
+.dashGov .sec3 {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 600ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-734276680538616-1;
+}
+.dashGov .sec4 {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 700ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-734276680538616-1;
+}
+
+.dashPrintTable {
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  padding-top: 30px;
+}
+.dashPrintTable h4 {
+  color: #2e735f !important;
+  font-family: "geMedium";
+  font-size: 36px;
+  text-align: center;
+}
+
+.pieChartClass .recharts-surface {
+  height: 160px !important;
+}
+
+@media (max-width: 1200px) {
+  .dashSelect {
+    margin-left: auto;
+  }
+  .dashMapChecks {
+    display: block;
+  }
+  .dashDetailsTitle {
+    padding-top: 35px !important;
+  }
+  .printBtn {
+    margin-bottom: 15px !important;
+  }
+}
+@media (max-width: 992px) {
+  .dashMap {
+    display: none !important;
+  }
+  .dashDetailsTitle {
+    padding-top: 100px !important;
+  }
+  .dashDefaultTable td {
+    height: 130px !important;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 700px) {
+  .Header .navLink {
+    width: fit-content;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+@media (max-width: 500px) {
+  .dashDetailsTitle {
+    padding-top: 145px !important;
+  }
+}
+.table-responsive {
+  overflow-x: auto !important;
+}

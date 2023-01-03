@@ -1,0 +1,201 @@
+.loginPage {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 105px;
+  padding-top: 30px;
+}
+.loginPage::after {
+  background-image: url("../../assets/images/patternGreen.svg");
+  background-position: center;
+  content: "";
+  position: absolute;
+  content: "";
+  opacity: 0.1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+
+  z-index: -3;
+}
+.loginBox {
+  padding: 20px;
+  margin: 60px auto 50px auto;
+  border-radius: 5px;
+  box-shadow: 0px 1px 8px 5px #e7e9f1;
+  background-color: #fbfcfe;
+  width: 30%;
+  height: auto;
+}
+
+.loginBox h5 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  color: #2e735f;
+}
+.loginBox label {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #707070;
+}
+
+.addEmail {
+  font-family: "dinNext";
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: right;
+  color: #83899f;
+}
+
+.ant-select-selector,
+.ant-form-item-control-input-content > input {
+  height: 45px !important;
+  border-radius: 4px;
+  background-color: #fffefb !important;
+  /* font-family: "dinNext" !important; */
+  font-size: 15px;
+  line-height: 1.36;
+  color: #364464 !important;
+  margin: auto;
+}
+
+.ant-input-password-icon {
+  color: #00726f !important;
+}
+
+.ant-form-item-explain.ant-form-item-explain-error > div {
+  text-align: right;
+  padding: 5px 0;
+  font-family: "dinNext" !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-inner:hover {
+  background-color: #2e735f !important;
+  border: solid 2px #2e735f !important;
+}
+
+.ant-checkbox:focus,
+.ant-checkbox:hover {
+  border-color: #2e735f !important;
+}
+
+.ant-checkbox-inner {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-input + .ant-checkbox-inner {
+  border-color: #2e735f !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: #fff !important;
+}
+
+.ant-form-item-label > label::before {
+  display: none !important;
+}
+
+.ant-form-item-label {
+  font-family: "dinNext" !important;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: right;
+  font-weight: 600;
+  color: #382f2d;
+}
+
+.checkDiv {
+  font-family: "dinNext" !important;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.signInBtn,
+.signInBtn:hover,
+.signInBtn:active,
+.signInBtn:focus {
+  border-radius: 5px !important;
+  background-color: #2e735f !important;
+  font-family: "dinNext";
+  font-size: 16px !important;
+  font-weight: bold;
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 1.94 !important;
+  text-align: center;
+  color: #fffefb !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.formButtons p,
+.formButtons .reActivateBtn,
+.formButtons .reActivateBtn:hover,
+.formButtons .reActivateBtn:active,
+.formButtons .reActivateBtn:focus,
+.formButtons p:hover {
+  font-family: "dinNext";
+  font-size: 12px;
+  font-weight: 500;
+  outline: none !important;
+  box-shadow: none !important;
+  line-height: 2.17;
+  text-align: right;
+  color: #2e735f !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.formQuestion {
+  font-family: "dinNext";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.17;
+  color: #83899f;
+  text-decoration: none !important;
+}
+
+.formAnswer {
+  font-family: "dinNext";
+  font-size: 14px !important;
+  cursor: pointer;
+  line-height: 1.83;
+  font-weight: bold !important;
+  margin-right: 15px;
+  text-decoration: none !important;
+  color: #2e735f;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .loginBox {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .loginBox {
+    width: 95%;
+    max-height: 400px !important;
+    overflow-x: scroll !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .loginPage {
+    margin-top: 80px;
+  }
+}

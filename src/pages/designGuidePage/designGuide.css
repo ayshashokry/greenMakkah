@@ -1,0 +1,83 @@
+.amanaDiv1 {
+  background-image: url("../../assets/images/designGuidePage/gaddah.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.amanaDiv2 {
+  background-image: url("../../assets/images/designGuidePage/makkah.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.amanaDiv3 {
+  background-image: url("../../assets/images/designGuidePage/taeef.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.amanaDiv1 button {
+  background: #3853b3;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "dinNext";
+  font-size: 16px;
+  height: 40px;
+  border: none;
+}
+.amanaDiv1 button:hover,
+.amanaDiv1 button:focus {
+  background: #fff;
+  color: #3853b3;
+  border: #3853b3;
+}
+.amanaDiv2 button {
+  background: #58b75e;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "dinNext";
+  font-size: 16px;
+  height: 40px;
+  border: none;
+}
+.amanaDiv2 button:hover,
+.amanaDiv2 button:focus {
+  background: #fff;
+  color: #58b75e;
+  border: #58b75e;
+}
+.amanaDiv3 button {
+  background: #226963;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "dinNext";
+  font-size: 16px;
+  height: 40px;
+  border: none;
+}
+.amanaDiv3 button:hover,
+.amanaDiv3 button:focus {
+  background: #fff;
+  color: #226963;
+  border: #226963;
+}
+.amanaDiv {
+  padding: 20px;
+}
+.amanaDiv h6 {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: right;
+  color: #ffffff;
+}
+.amanaDiv p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: right;
+  color: #ffffff;
+  padding-bottom: 70px;
+}

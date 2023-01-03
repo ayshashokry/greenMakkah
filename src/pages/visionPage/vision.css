@@ -1,0 +1,139 @@
+.visionPage {
+  margin-top: 105px;
+  padding-bottom: 120px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.visionPage::after {
+  background-image: url("../../assets/images/patternGreen.svg");
+  background-position: center;
+  content: "";
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -3;
+}
+
+.visionHeader {
+  background-image: url("../../assets/images/visionPage/visionHeader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  position: relative;
+}
+
+.visionHeader p {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 500;
+  width: 80vw;
+  font-size: 28px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.visionTabs p {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #2e735f;
+  padding-top: 50px;
+}
+.visionCol1 {
+  margin-top: auto;
+  margin-right: -200px;
+}
+.visionTabsCol {
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 182.5px;
+  margin-bottom: -70px;
+  padding: 40px;
+  width: 700px;
+  height: 360px;
+}
+.visionTabsCol ul {
+  text-align: center !important;
+}
+.visionTabsCol .react-tabs__tab {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #707070;
+  outline: none;
+  border: none;
+}
+.visionTabsCol .react-tabs__tab:hover {
+  color: #106950;
+}
+.visionTabsCol .react-tabs__tab--selected {
+  font-family: "dinNext";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+  color: #2e735f;
+  border-bottom: 2px solid #2e735f;
+}
+.arabicNum {
+  font-family: "geLight";
+}
+@media (max-width: 1200px) {
+  .visionHeader p {
+    top: 57%;
+  }
+}
+@media (max-width: 992px) {
+  .visionCol1 {
+    margin-top: 10px !important;
+    margin-right: unset !important;
+  }
+  .visionHeader p {
+    width: 90vw;
+    top: 53%;
+    font-size: 24px;
+  }
+  .visionPage {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .visionHeader p {
+    width: 90vw;
+    top: 55%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .visionTabsCol {
+    width: 560px;
+  }
+}
+@media (max-width: 768px) and (min-width: 550px) {
+  .visionTabsCol {
+    width: 530px;
+  }
+}
+@media (max-width: 550px) {
+  .visionTabsCol {
+    width: 100%;
+  }
+  .visionTabs p {
+    font-size: 20px;
+  }
+}
